@@ -1,34 +1,107 @@
+<!-- Indica al navegador que este es un documento HTML5 moderno -->
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8"
-    <title>mi primera pagina web</title>
-    <style>
-      body{
-        background-color: red;
-        font-family: `Segoe UI` , Tahoma, Geneva, Verdana, sans-serif:
-        display:flex;
-        justify-content: center;
-        aling-items:center;
-        height: 100vh;
-        margin:0;
-      }
-      .caje-texto{
-        background-color:red;
-        color:#333333;
-        border:2px solid #3498db;
-        border-radius:10px;
-        padding:20px;
-        box-shadow:0px 4px 10px rgba(0,0,0,0.1);
-        max-width:400px;
 
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-    <h1>hola mundo desde github pages</h1>
-    <p>mi sitio web esta funcionando</p>
-    </div>
-  </body>
-  <html/>
+<!-- Apertura de la etiqueta raíz del sitio, configurado en idioma español -->
+<html lang="es">
+
+<head>
+    <!-- Define la codificación de caracteres para que se lean bien las tildes y la ñ -->
+    <meta charset="UTF-8">
+    
+    <!-- Hace que la página se adapte correctamente al tamaño de las pantallas de celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- El título que se muestra en la pestaña de arriba en el navegador -->
+    <title>Diccionario HTML Básico</title>
+    
+    <!-- Enlaza este documento con el archivo de estilos externos llamado estilos.css -->
+    <!-- Enlaza este documento con el archivo de estilos externos llamado estilos.css -->
+    <!-- Enlaza este documento con el archivo de estilos externos llamado estilos.css -->
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Sección de cabecera o encabezado principal de la página web -->
+    <header>
+        <!-- Título principal del sitio web (Jerarquía máxima) -->
+        <h1>Mi Guía Práctica de HTML</h1>
+        <!-- Párrafo secundario a modo de subtítulo de la cabecera -->
+        <p>Aprender las etiquetas básicas experimentando con ellas.</p>
+    </header>
+
+    <!-- Sección que envuelve todo el contenido principal y central del sitio -->
+    <main>
+        
+        <!-- ================= TARJETA 1: TÍTULOS ================= -->
+        <!-- Contenedor tipo sección que agrupa el ejemplo y la teoría de los títulos -->
+        <section class="tarjeta-guia">
+            
+            <!-- Bloque izquierdo: Muestra cómo renderiza el navegador las etiquetas en vivo -->
+            <div class="ejemplo">
+                <h2>Este es un título (H2)</h2>
+                <h3>Este es un subtítulo (H3)</h3>
+            </div>
+            
+            <!-- Bloque derecho: Contiene la explicación de texto sobre estas etiquetas -->
+            <div class="explicacion">
+                <!-- Etiqueta de texto en línea para resaltar el nombre del código en pantalla -->
+                <!-- "&lt;" significa Menor Que (<) y "&gt;" significa Mayor Que (>) -->
+                <span class="etiqueta">&lt;h1&gt; a &lt;h6&gt;</span>
+                <!-- Párrafo explicativo con texto en negrita mediante la etiqueta strong -->
+                <p>Sirven para definir la jerarquía de los títulos de la página. El <strong>H1</strong> es el título principal, mientras que del <strong>H2 al H6</strong> se usan para secciones menores.</p>
+            </div>
+            
+        </section>
+
+        <!-- ================= TARJETA 2: PÁRRAFOS ================= -->
+        <section class="tarjeta-guia">
+            
+            <div class="ejemplo">
+                <!-- Ejemplo en vivo de un párrafo de texto normal -->
+                <p>Este es un texto de párrafo común y corriente en una página web.</p>
+            </div>
+            
+            <div class="explicacion">
+                <span class="etiqueta">&lt;p&gt;</span>
+                <!-- La etiqueta code da un formato de tipografía estilo programación a fragmentos sueltos de texto -->
+                <p>Significa "párrafo". Se utiliza para estructurar bloques de texto normales. Añade automáticamente un espacio en blanco vertical para separar los bloques.</p>
+            </div>
+            
+        </section>
+
+        <!-- ================= TARJETA 3: ENLACES ================= -->
+        <section class="tarjeta-guia">
+            
+            <div class="ejemplo">
+                <!-- Enlace que apunta a una URL externa y se abre en una pestaña nueva -->
+                <a href="https://github.com" target="_blank">Ir a GitHub</a>
+            </div>
+            
+            <div class="explicacion">
+                <span class="etiqueta">&lt;a&gt;</span>
+                <p>Crea hipervínculos. Usa el atributo <code>href</code> para la dirección de destino. El atributo <code>target="_blank"</code> fuerza al navegador a abrirlo en otra pestaña.</p>
+            </div>
+            
+        </section>
+
+        <!-- ================= TARJETA 4: CONTENEDORES ================= -->
+        <section class="tarjeta-guia">
+            
+            <div class="ejemplo">
+                <!-- Elemento contenedor genérico con una clase específica para darle un estilo llamativo -->
+                <div class="bloque-prueba">Bloque Div</div>
+            </div>
+            
+            <div class="explicacion">
+                <span class="etiqueta">&lt;div&gt;</span>
+                <p>Es una caja vacía invisible. Sirve como contenedor genérico para agrupar elementos y estructurar el diseño o aplicarles estilos visuales en bloque.</p>
+            </div>
+            
+        </section>
+        
+    </main>
+
+</body>
+</html>
